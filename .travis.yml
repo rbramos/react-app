@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services:
   - docker
@@ -6,7 +7,7 @@ before_install:
   - docker build -t rbramos/react-app -f Dockerfile.dev .
 
 script:
-  - docker run rbramos/react-app npm run test -- --coverage
+  - docker run -e CI=true rbramos/react-app npm run test
 
 #deploy:
 #  provider: elasticbeanstalk
