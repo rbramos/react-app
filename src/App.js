@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello from React
+          Updated by Pull Request! :D
         </p>
         <a
           className="App-link"
