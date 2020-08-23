@@ -8,15 +8,15 @@ before_install:
 script:
   - docker run rbramos/react-app npm run test -- --coverage
 
-deploy:
-  provider: elasticbeanstalk
-  region: "eu-east-1"
-  app: "react-app"
-  env: "React-app-env"
-  bucket_name: ""
-  bucket_path: ""
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+#deploy:
+#  provider: elasticbeanstalk
+#  region: "eu-east-1"
+#  app: "react-app"
+#  env: "React-app-env"
+#  bucket_name: ""
+#  bucket_path: ""
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key:
+#    secure: $AWS_SECRET_KEY
