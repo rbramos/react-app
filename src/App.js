@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Updated by the pull request
+          Updated by the pull request! :D
         </p>
         <a
           className="App-link"
